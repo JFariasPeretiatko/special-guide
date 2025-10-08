@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <radialGradient id="bgGradient" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#1A237E;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="shapeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF6B35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E91E63;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00E676;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00BCD4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#bgGradient)" stroke="#1A237E" stroke-width="2"/>
+  
+  <!-- Main geometric shapes -->
+  <!-- Central hexagon -->
+  <polygon points="100,40 130,60 130,100 100,120 70,100 70,60" 
+           fill="url(#shapeGradient)" 
+           stroke="#FFFFFF" 
+           stroke-width="3" 
+           opacity="0.9"/>
+  
+  <!-- Rotating triangular elements -->
+  <g transform="rotate(0 100 100)">
+    <polygon points="100,25 115,50 85,50" fill="url(#accentGradient)" opacity="0.8"/>
+  </g>
+  <g transform="rotate(72 100 100)">
+    <polygon points="100,25 115,50 85,50" fill="url(#accentGradient)" opacity="0.8"/>
+  </g>
+  <g transform="rotate(144 100 100)">
+    <polygon points="100,25 115,50 85,50" fill="url(#accentGradient)" opacity="0.8"/>
+  </g>
+  <g transform="rotate(216 100 100)">
+    <polygon points="100,25 115,50 85,50" fill="url(#accentGradient)" opacity="0.8"/>
+  </g>
+  <g transform="rotate(288 100 100)">
+    <polygon points="100,25 115,50 85,50" fill="url(#accentGradient)" opacity="0.8"/>
+  </g>
+  
+  <!-- Inner decorative circles -->
+  <circle cx="100" cy="80" r="8" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="85" cy="90" r="5" fill="#FFD700" opacity="0.8"/>
+  <circle cx="115" cy="90" r="5" fill="#FFD700" opacity="0.8"/>
+  
+  <!-- Dynamic curved lines -->
+  <path d="M 60 140 Q 100 120 140 140" stroke="#FFFFFF" stroke-width="3" fill="none" opacity="0.7"/>
+  <path d="M 60 160 Q 100 140 140 160" stroke="url(#accentGradient)" stroke-width="2" fill="none" opacity="0.8"/>
+  
+  <!-- Corner accent elements -->
+  <circle cx="30" cy="30" r="12" fill="url(#accentGradient)" opacity="0.6"/>
+  <circle cx="170" cy="30" r="12" fill="url(#accentGradient)" opacity="0.6"/>
+  <circle cx="30" cy="170" r="12" fill="url(#accentGradient)" opacity="0.6"/>
+  <circle cx="170" cy="170" r="12" fill="url(#accentGradient)" opacity="0.6"/>
+  
+  <!-- Central highlight -->
+  <circle cx="100" cy="100" r="15" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.8"/>
+</svg>
